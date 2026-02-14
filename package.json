@@ -1,0 +1,33 @@
+{
+    "$schema": "https://www.schemastore.org/package.json",
+    "name": "phpwind",
+    "type": "module",
+    "private": true,
+    "version": "1.0.0",
+    "description": "phpwind项目使用Laravel重构",
+    "license": "GPL-3.0-or-later",
+    "repository": "https://github.com/hestiacn/phpwind-laravel",
+    "engines": {
+        "node": ">=22.16.0",
+        "pnpm": ">=10.11.1"
+    },
+    "scripts": {
+        "preinstall": "npx only-allow pnpm",
+        "docs:dev": "vitepress dev docs",
+        "docs:build": "vitepress build docs",
+        "docs:preview": "vitepress preview docs"
+    },
+    "devDependencies": {
+        "vitepress": "^1.6.4",
+        "element-plus": "^2.12.0",
+        "parallax-js": "^3.1.0",
+        "@vueuse/core": "^14.1.0",
+        "@vitejs/plugin-vue": "^6.0.3",
+        "sass": "^1.96.0"
+    },
+    "pnpm": {
+        "overrides": {
+            "vite": "^7.2.7"
+        }
+    }
+}
